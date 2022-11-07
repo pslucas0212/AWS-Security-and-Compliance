@@ -16,7 +16,29 @@ Understanding the Shared Responsibility Model
   - Identity and Access Managment. You are responsible for application security and identity and access management.
   - Network Traffic.  You are responsible for network traffic protection, which includes security group firewall configuration.
   - Installed software.  You are responsible for network traffic protection, which includes security group firewall configuration.
-  
+
+- EC2 Shared Responsibility Model
+  - Customer
+    - Installed applications
+    - Patching the guest operating system 
+    - Security controls
+  - AWS
+    - EC2 service
+    - Patching the host operating system
+    - Security of the physical server
+- Lambda Shared Responsibility Model
+  - Customer
+    - Security of code
+    - Storage of sensitive data 
+    - IAM for permissions
+   - AWS
+     - Lambda service
+     - Upgrading Lambda languages
+     - Lambda endpoints 
+     - Operating system
+     - Underlying infrastructure
+     - Software dependencies
+
 - Which security responsibilities are shared?
   - Patch Management
     - AWS: Patching infrastructure
@@ -29,4 +51,8 @@ Understanding the Shared Responsibility Model
     - Customer: Customer Employees.   
     
   - How do I report abuse of AWS resources?  Contact the AWS Trust & Safety team using the Report Amazon AWS abuse form or by contacting abuse@amazonaws.com.
+
+- Study for the Exam
+  - Shared Responsibility Model
+    - Going into the exam, remember what you are responsible for and what AWS is responsible for.
   
