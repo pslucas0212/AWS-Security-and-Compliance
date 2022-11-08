@@ -142,5 +142,39 @@
   - Real-world use cases
     - Don't forget the real-world use cases for IAM.
 
+### Understanding IAM Permissions
 
+**Roles** Roles define access permissions and are temporarily assumed by an IAM user or service.
+- You assume a role to perform a task in a single session.
+- Assumed by any user or service that needs it.
+- Access is assigned using policies.
+- You grant users in one AWS account access to resources in another AWS account.
 
+- You can attach a role to an instance that provides privileges (e.g., uploading files to S3) to applications running on the instance. Roles help you avoid sharing long-term credentials like access keys and protect your instances from unauthorized access.
+
+**Policies** You manage permissions for IAM users, groups, and roles by creating a policy document in JSON format and attaching it.
+- You can add a bucket access policy directly to an Amazon S3 bucket to grant IAM users access permissions for the bucket and the objects in it.
+
+**IAM Best Practices**
+- Enable MFA for privileged users. 
+  - You should enable multi-factor authentication (MFA) for the root user and other administrative users.
+- Implement strong password policies. 
+  - You should require IAM users to change their passwords after a specified period of time, prevent users from reusing previous passwords, and rotate security credentials regularly.
+- Create individual users instead of using root.
+  - You shouldn't use the root user for daily tasks. 
+- Use roles for Amazon EC2 instances.
+  - You should use roles for applications that run on EC2 instances instead of long-term credentials like access keys.
+
+**IAM Credential Report** The IAM credential report lists all users in your account and the status of their various credentials.
+- Lists all users and status of passwords, access keys, and MFA devices
+- Used for auditing and compliance
+
+- Studying for the Exam
+  - Users, groups, roles, and policies
+    - Going into the exam, understand the differences between users, groups, roles, and policies.
+  - IAM best practices
+    - Don't forget to familiarize yourself with IAM best practices.
+  - Real-world use cases
+    - Don't forget the real-world use cases for IAM.
+  - IAM credential report
+    - Don't forget the importance of the IAM credential report.
