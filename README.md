@@ -182,4 +182,44 @@
 ### Exploring Application Security Services
 AWS has several software-based security tools available to help you monitor and protect your resources.
 
-**FiewqLL**
+**Firewall** 
+ - Firewalls prevent unauthorized access to your networks by inspecting incoming and outgoing traffic against security rules you've defined. 
+
+**WAF (Web Application Firewall)** WAF helps protect your web applications against common web attacks.
+- Protects apps against common attack patterns
+- Protects against cross-site scripting
+- Protects against SQL injection
+- You can deploy a web application directly to an EC2 instance and protect it from cross-site scripting attacks using WAF. You can even deploy WAF on CloudFront as part of your CDN solution to block malicious traffic.
+
+
+**Distributed Denial of Service (DDoS)**
+- A DDoS attack causes a traffic jam on a website or web application in an attempt to cause it to crash.
+
+**Shield**  
+Shield is a managed Distributed Denial of Service (DDoS) protection service.
+- Always-on detection
+- Shield Standard is free
+  - Provides free protection against common and frequently occurring attacks
+- Shield Advanced is a paid service
+  - Provides enhanced protections and 24/7 access to AWS experts for a fee
+- DDoS protection via Shield Advanced is supported on several services.
+  - CloudFront
+  - Route53
+  - Elastic Load Balancing
+  - AWS Global Accelerator
+- Shield Advanced will give you notifications of DDoS attacks via CloudWatch metrics. Additionally, with Shield Advanced, you have 24/7 access to AWS experts to assist during an attack.
+
+**Macie** Macie helps you discover and protect sensitive data.
+- Uses machine learning 
+- Evaluates S3 environmen
+- Uncovers personally identifiable information (PII) 
+- Macie can be used to find sensitive data like passport numbers, social security numbers, and credit card numbers on S3.
+
+- **Studying for the Exam**
+  - WAF
+    - Going into the exam, don't forget WAF protects against SQL injection and cross-site scripting attacks.
+  - Shield
+    - Don't forget Shield provides DDoS protection and works with CloudFront, Route 53, Elastic Load Balancing, and AWS Global Accelerator.
+  - Macie
+    - Remember that Macie helps you find sensitive information. 
+
