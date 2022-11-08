@@ -2,7 +2,7 @@
 
 [AWS Review Notes Table of Contents](https://github.com/pslucas0212/AWS-Review-Notes)
 
-Understanding the Shared Responsibility Model
+**Understanding the Shared Responsibility Model**
 - In the public cloud, there is a shared security responsibility between you and AWS.
 - AWS is responsible for protecting and securing their infrastructure.
   - AWS is responsible for its global infrastructure elements: Regions, edge locations, and Availability Zones.
@@ -57,7 +57,7 @@ Understanding the Shared Responsibility Model
     - Going into the exam, remember what you are responsible for and what AWS is responsible for.
   
   
-Leveraging the Well-Architected Framework
+**Leveraging the Well-Architected Framework**
 - The 6 pillars of the Well-Architected Framework describe design principles and best practices for running workloads in the cloud.
 
 
@@ -76,7 +76,7 @@ Leveraging the Well-Architected Framework
     - You can use EC2 Auto Scaling to ensure you are maximizing utilization.
 
 
-Understanding IAM Users
+**Understanding IAM Users**
 - Identity and Access Management (IAM).  IAM allows you to control access to your AWS services and resources. Permissions. Roles. MFA
   - Helps you secure your cloud resources
   - You define who has access
