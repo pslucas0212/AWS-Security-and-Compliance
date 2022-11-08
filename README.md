@@ -60,8 +60,6 @@ Understanding the Shared Responsibility Model
 Leveraging the Well-Architected Framework
 - The 6 pillars of the Well-Architected Framework describe design principles and best practices for running workloads in the cloud.
 
-- Operational Excellence
-  - 
 
 - Here are a few examples of applying best practices and design principles from the 6 pillars of the Well-Architected Framework in the real world. 
   - Operational Exellence
