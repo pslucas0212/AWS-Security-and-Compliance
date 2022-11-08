@@ -223,3 +223,81 @@ Shield is a managed Distributed Denial of Service (DDoS) protection service.
   - Macie
     - Remember that Macie helps you find sensitive information. 
 
+### Exploring Additional Security Services
+**Config** Config allows you to assess, audit, and evaluate the configurations of your resources.
+- Track configuration changes over time
+- Notifications via Simple Notification Service (SNS) of every configuration change
+- Delivers configuration history file to S3
+- Config allows you to record configuration changes within your EC2 instances. You can view network, software, and operating system (OS) configuration changes, system-level updates, and more.
+
+**Guard Duty** GuardDuty is an intelligent threat detection system that uncovers unauthorized behavior
+- Uses machine learning
+- Built-in detection for EC2, S3, and IAM 
+- Reviews CloudTrail, VPC Flow Logs, and DNS logs
+- GuardDuty's anomaly detection feature evaluates all API requests in your account and identifies events that are associated with common techniques used by attackers.
+
+**Inspector** nspector works with EC2 instances to uncover and report vulnerabilities.
+- Agent installed on EC2 instance 
+- Reports vulnerabilities found
+- Checks access from the internet, remote root login, vulnerable software versions, etc.
+- Inspector has several built-in rules to access your EC2 instances to find vulnerabilities and report them prioritized by level of severity.
+
+**Artifact** Artifact offers on-demand access to AWS security and compliance reports.
+- Central repository for compliance reports from third-party auditors
+- Service Organization Controls (SOC) reports
+- Payment Card Industry (PCI) reports
+- Artifact provides a central repository for AWS' security and compliance reports via a self-service portal.
+
+**Cognito** Cognito helps you control access to mobile and web applications. 
+- Provides authentication and authorization
+- Helps you manage users 
+- Assists with user sign-up and sign-in
+- Cognito provides functionality that allows your users to sign in to your application through social media accounts like Facebook and Google.
+
+- **Studying for the Exam**
+  - Config
+    - Remember that Config allows you to identify changes to various resources over time.
+  - GuardDuty
+    - Don't forget GuardDuty identifies malicious or unauthorized activities in your AWS account.
+  - Inspector
+      - Don't forget Inspector only works for EC2 instances.
+  - Artifact
+    - Don't forget Artifact provides you with compliance reports.
+  - Cognito
+    - Don't forget Cognito controls access to mobile and web applications.
+
+### Utilizing Data Encryption and Secrets Management Services
+Data encryption encodes data so it cannot be read by unauthorized users.
+- Data in-flight
+  - Data that is moving from one location to another
+- Data at rest
+  - Data that is inactive or stored for later use
+
+**Key Management Service (KMS)**  KMS allows you to generate and store encryption keys.
+- Key generator
+- Store and control keys
+- AWS manages encryption keys
+- utomatically enabled for certain services
+- When you create an encrypted Amazon EBS volume, you're able to specify a KMS customer master key. 
+
+**CloudHSM** CloudHSM is a hardware security module (HSM) used to generate encryption keys.
+- Dedicated hardware for security
+- Generate and manage your own encryption keys
+- AWS does not have access to your keys
+- CloudHSM allows you to meet corporate, contractual, and regulatory compliance requirements for data security by using dedicated hardware in the cloud.
+
+**Secrets Manager** Secrets Manager allows you to manage and retrieve secrets (passwords or keys).  
+- Rotate, manage, and retrieve secrets
+- Encrypt secrets at rest
+- Integrates with services like RDS, Redshift, and DocumentDB
+- Secrets Manager allows you to retrieve database credentials with a call to Secrets Manager APIs, removing the need to hardcode sensitive information in plain text within your application code.
+
+- **Studying for the Exam**
+  - KMS
+    - Going into the exam, don't forget AWS manages KMS keys.
+  - CloudHSM
+    - Don't forget you manage the keys generated with CloudHSM.
+  - Secrets Manager
+    - Don't forget Secrets Manager has built-in integration for RDS, Redshift, and DocumentDB.
+
+
