@@ -2,7 +2,7 @@
 
 [AWS Review Notes Table of Contents](https://github.com/pslucas0212/AWS-Review-Notes)
 
-**Understanding the Shared Responsibility Model**
+###Understanding the Shared Responsibility Model
 - In the public cloud, there is a shared security responsibility between you and AWS.
 - AWS is responsible for protecting and securing their infrastructure.
   - AWS is responsible for its global infrastructure elements: Regions, edge locations, and Availability Zones.
@@ -57,7 +57,7 @@
     - Going into the exam, remember what you are responsible for and what AWS is responsible for.
   
   
-**Leveraging the Well-Architected Framework**
+###Leveraging the Well-Architected Framework
 - The 6 pillars of the Well-Architected Framework describe design principles and best practices for running workloads in the cloud.
 
 
@@ -76,8 +76,8 @@
     - You can use EC2 Auto Scaling to ensure you are maximizing utilization.
 
 
-**Understanding IAM Users**
-- Identity and Access Management (IAM).  IAM allows you to control access to your AWS services and resources. Permissions. Roles. MFA
+###Understanding IAM Users
+***Identity and Access Management (IAM)***  IAM allows you to control access to your AWS services and resources. Permissions. Roles. MFA
   - Helps you secure your cloud resources
   - You define who has access
   - You define what they can do
@@ -93,10 +93,14 @@
     - AWS managed policies
     - Customer managed policies
     - Permissions boundaries
-- Authntication (Who) vs Authorization (What)
+
+
+***Authntication (Who) vs Authorization (What)***
   - Authentication is where you present your identity (username) and provide verification (password).
   - Authorization determines which services and resources the authenticated identity has access to.
-- Users are entities you create in IAM to represent the person or application needing to access your AWS resources.
+
+
+***Users*** are entities you create in IAM to represent the person or application needing to access your AWS resources.
   - The root user is created when you first open your AWS account. 
   - What can only the root user do?
     - Close your account
@@ -115,7 +119,9 @@
 
   - The principle of least privilege involves giving a user the minimum access required to get the job done.
     - Create access keys for an IAM user that needs access to the AWS CLI. The AWS Command Line Interface (CLI) allows you to access resources in your AWS account through a terminal or command window. Access keys are needed when using the CLI and can be generated using IAM.
-  - Groups. A group is a collection of IAM users that helps you apply common access controls to all group members.
+
+
+***Groups** A group is a collection of IAM users that helps you apply common access controls to all group members.
     - Administrators perform administrative tasks such as creating new users.
     - Developers use compute and database services to build applications.
     - Analysts run budget and usage reports.
